@@ -1,0 +1,238 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	color: black;
+	line-height: 1.4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	text-align: center;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+
+a {
+	margin:0px;
+	padding:0px;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00ffcc;
+	text-decoration: none;
+}
+
+img {
+	border: 0 none transparent;
+}
+
+input, select, table, textarea {
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* CONTENT ========================================= */
+
+nav {
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 3000;
+	font-size: 14px;
+	font-family: "U", "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+	opacity: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+nav a, nav a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav a {
+	margin-left: 1em;
+	border-left: 1px solid #7f7f7f;
+	padding-left: 1em;
+}
+
+nav a:first-child {
+	margin-left: 0;
+	border-left: 0;
+	padding-left: 0;
+}
+
+nav a:hover {
+	color: #0099ff;
+}
+
+#timelineFooter {
+	position: fixed;
+	bottom: 0;
+	left:0;
+	right:0;
+	height:100px;
+	/*background: url('footerMask.png') repeat-y right bottom;*/
+	background-color: white;
+}
+#timeline {
+	position: absolute;
+	left: 0;
+	right:0;
+	bottom: 0;
+	height:10px;
+	background-color:black;
+	border-radius: 10px;
+	padding:0;
+	border:0;
+	margin:30px;
+}
+
+#playShadow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 0;
+	background-color:#0099ff;
+	border-radius:10px;
+}
+
+#button {
+	position:absolute;
+	top:125px;
+	left:125px;
+	display:block;
+	height:50px;
+	width:50px;
+	z-index: 200;
+}
+
+#button.hidden {
+	display: none;
+	opacity: 0;
+}
+
+#button:hover {
+	-webkit-box-shadow: 0 0 25px #ffffff;
+	-moz-box-shadow: 0 0 25px #ffffff;
+	-ms-box-shadow: 0 0 25px #ffffff;
+	box-shadow: 0 0 25px #ffffff;
+	opacity: 1 !important;
+}
+
+#button.playing {
+	opacity: 1;
+}
+
+#button span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url(icon_play.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-transition: -webkit-transform 0.1s linear;
+	-moz-transition: -moz-transform 0.1s linear;
+	-ms-transition: -ms-transform 0.1s linear;
+	transition: transform 0.1s linear;
+}
+
+#button.playing span {
+	background-image: url(icon_pause.png);
+}
+
+#button:active span {
+	-webkit-transform: scale(0.85);	
+	-moz-transform: scale(0.85);	
+	-ms-transform: scale(0.85);	
+	transform: scale(0.85);	
+}
+
+#loading {
+	color: black;
+	font-size:40pt;
+}
+
+#mainCan {
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+.eq {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 10;
+	width: 273px;
+	height: 272px;
+	margin: -171px 0 0 -136px;
+	background-repeat: no-repeat;
+	opacity: 0;
+}
+
+#container {
+	position:absolute;
+	width:100%;
+	border: none;
+	margin: 0;
+	padding:0;
+}
+
+#leftPanel {
+	position: fixed;
+	width: 300px;
+	background-color: white;
+	padding:0;
+	margin:0;
+	border:none;
+}
+
+#sliceMask {
+	position: fixed;
+	right:0;
+	top:0;
+	height:40px;
+	left: 300px;
+	background: url('topMask.png') repeat-x right top;
+	/*background-color:white;*/
+}
+
+#slicesPane {
+	margin-left: 300px;
+	padding-left:15px;
+	background-color: white;
+	padding-bottom:100px;
+	border: 1px solid white;
+}
+
+.sliceImgBox {
+	float:left;
+	height:40px;
+	width:40px;
+	margin:15px;
+	padding:10px;
+	background-color: black;
+	border-radius:10px;
+}
+
+.sliceImg {
+	float:left;
+}
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="fe5279a7-dc42-284f-ae8d-b537d7b6c182" kpf_version="4" name="Datasculpture.kpf">
+<folder id="bf4c89c8-a8ee-4d4f-b418-fe3daa490c21" idref="fe5279a7-dc42-284f-ae8d-b537d7b6c182" name="python">
+</folder>
+<folder id="ccfb5c9c-53e5-0e4e-8fe4-520640d978c7" idref="fe5279a7-dc42-284f-ae8d-b537d7b6c182" name="assets">
+</folder>
+<preference-set idref="fe5279a7-dc42-284f-ae8d-b537d7b6c182">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>
